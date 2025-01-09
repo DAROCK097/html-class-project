@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Template</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/822bb4c87f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,7 +25,7 @@
             <img class="main-image" src="images/IMG_0090.jpg" alt="person-image">
         </div>
         <div class="main-content">
-            <h1>Hi, I'm <strong>Lukman Olamide.</strong></h1>
+            <h1>Hi. I'm <strong>Lukman Olamide.</strong></h1>
             <p>
                 I'm a <strong>Software Engineer</strong> with almost 5 
                 years of Experience
@@ -30,7 +33,9 @@
                 <a href="https://github.com/lukmani666/" target="_blank">GITHUB PAGE</a> 
                 & released under <a href="#">MIT license</a>
             </p>
-            <button class="main-btn">Learn about what i do</button>
+            <div class="main-cont-btn">
+                <button class="main-btn"><span>Learn about what i do</span></button>
+            </div>
         </div>
     </main>
     <section class="section1">
@@ -45,8 +50,8 @@
                     ipsum primis sed amet consequat lorem dolore.
                 </p>
             </div>
-        </div>
-        <div class="section1-div"></div>
+    
+        
             <div class="stuff">
                 <i class="fa-solid fa-camera-retro"></i>
                 <h3>Lorem dolor tempus</h3>
@@ -55,8 +60,8 @@
                     vestibulum ipsum primis sed amet consequat lorem dolore.
                 </p>
             </div>
-        </div>
-        <div class="section1-div"></div>
+        
+           
             <div class="stuff">
                 <i class="fa-regular fa-thumbs-up"></i>
                 <h3>Feugiat posuere</h3>
@@ -68,10 +73,14 @@
             </div>
         </div>
         <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-        <button class="section1-btn">See more of my recent work</button>
+        <div class="btn-cont">
+            <button class="section1-btn">See more of my recent work</button>
+        </div>
     </section>
     
     <section class="section2">
+        <h2>Here’s some stuff I made recently.</h2>
+        <p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p>
         <div class="section2-div">
             <div class="stuff2">
                 <img src="images/pic01.jpg" alt="">
@@ -84,7 +93,7 @@
                 <p>Ornare nulla proin odio consequat.</p>
             </div>
             <div class="stuff2">
-                <img src="images/pic013.jpg" alt="">
+                <img src="images/pic03.jpg" alt="">
                 <h3>Lorem ipsum</h3>
                 <p>Ornare nulla proin odio consequat.</p>
             </div>
@@ -105,46 +114,50 @@
             </div>
         </div>
         <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-        <button class="section2-btn">Get in touch with me</button>
+        <div class="btn-cont">
+            <button class="section2-btn">Get in touch with me</button>
+        </div>
     </section>
     <footer>
         <h2>Have me make stuff for you.</h2>
         <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
         <div class="footer-contact">
-            <div>
-                <div class="name-email">
-                    <input type="text" placeholder="Name" name="" id="">
-                    <input type="email" placeholder="Email">
+            <form action="">
+                <div style="padding-bottom: 1.5rem;">
+                    <div class="name-email">
+                        <input type="text" placeholder="Name" name="" id="">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <input type="text" placeholder="Subject"><br>
+                    <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
                 </div>
-                <input type="text" placeholder="Subject">
-                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="contact-btn">
-                <button class="send-btn">Send Message</button>
-                <button class="clear-btn">Clear Form</button>
-            </div>
+                <div class="contact-btn">
+                    <button class="send-btn">Send Message</button>
+                    <button class="clear-btn" type="reset">Clear Form</button>
+                </div>
+            </form>
             <hr>
             <h3>Find me on ...</h3>
             <div class="parent-icon">
-                <div class="icon-child">
+                <div class="icon-child twitter-icon">
                     <i class="fa-brands fa-twitter"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child facebook-icon">
                     <i class="fa-brands fa-facebook"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child dribble-icon">
                     <i class="fa-brands fa-dribbble"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child linkedin-icon">
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child tumblr-icon">
                     <i class="fa-brands fa-tumblr"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child google-icon">
                     <i class="fa-brands fa-google"></i>
                 </div>
-                <div class="icon-child">
+                <div class="icon-child github-icon">
                     <i class="fa-brands fa-github"></i>
                 </div>
             </div>
@@ -152,7 +165,6 @@
             <div class="reserved">
                 <p class="first-reserved">&copy;United. All rights reserved</p>
                 <p class="second-reserved">Design: <a href="#">HTML5</a></p>
-                <p class="third-reserved">Demo images: <a href="#">Unsplash</a></p>
             </div>
         </div>
     </footer>
